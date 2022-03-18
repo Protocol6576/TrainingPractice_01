@@ -9,7 +9,9 @@ namespace EAA_Task_05
             WorldInteraction make = new WorldInteraction();
 
             make.StatCreation();
+            make.AddEnemy();
             make.ShowMap();
+            make.ShowHP();
 
             int bruh = 0;
 
@@ -21,7 +23,11 @@ namespace EAA_Task_05
 
             Console.Clear();
             Console.SetCursorPosition(0, 0);
-            Console.WriteLine("((Вставить экран победы))");
+
+            if (bruh == 1)
+                Console.WriteLine("// Вы победили! //");
+            else
+                Console.WriteLine("// Вы проиграли! //");
         }
     }
 }

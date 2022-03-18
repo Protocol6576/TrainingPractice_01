@@ -9,6 +9,8 @@ namespace EAA_Task_05
 {
     class WorldInteraction
     {
+        const int maxHp = 5;
+
         char[,] map = new char[100, 100];
         int[] position = new int[2] { 1, 1 };
         int[] futPosition = new int[2] { 1, 1 };
@@ -18,6 +20,8 @@ namespace EAA_Task_05
         string step;
         ConsoleKeyInfo key;
         int size = 29;
+        int size2 = 29;
+        int hp = maxHp;
 
         public void chekDir()
         {
@@ -87,13 +91,26 @@ namespace EAA_Task_05
                     position[1] = futPosition[1];
                     exit = 1;
                     break;
+                case '!':
+                    position[0] = futPosition[0];
+                    position[1] = futPosition[1];
+                    hp--;
+                    ShowHP();
+
+                    if (hp == 0)
+                        exit = 2;
+                    break;
+                default:
+                    futPosition[0] = position[0];
+                    futPosition[1] = position[1];
+                    break;
 
             }
 
             Console.SetCursorPosition(position[1], position[0] + 1);
             Console.Write(charModel);
 
-            Console.SetCursorPosition(size, size);
+            Console.SetCursorPosition(100, 2);
             return exit;
         }
 
@@ -143,6 +160,9 @@ namespace EAA_Task_05
         public void StatCreation()
         {
             string[] readMap = File.ReadAllLines(@"D:\map.txt");
+            size = readMap.Length;
+            size2 = readMap[1].Length;
+
             for (int i = 0; i < readMap.Length; i++)
             {
                 for (int j = 0; j < readMap[i].Length; j++)
@@ -152,6 +172,24 @@ namespace EAA_Task_05
             }
 
             //map[readMap.Length - 2, readMap.Length - 2] = '$';
+        }
+
+        public void AddEnemy()
+        {
+            Random rnd = new Random();
+            int enemy = 0;
+
+            while (enemy < 5)
+            {
+                int p1 = rnd.Next(1, size);
+                int p2 = rnd.Next(1, size2);
+
+                if(map[p1, p2] == ' ')
+                {
+                    map[p1, p2] = '!';
+                    enemy++;
+                }
+            }
         }
 
         public void ShowMap()
@@ -168,6 +206,22 @@ namespace EAA_Task_05
             Console.SetCursorPosition(position[1], position[0] + 1);
             Console.Write(charModel);
             Console.SetCursorPosition(size, size);
+        }
+
+        public void ShowHP()
+        {
+            Console.SetCursorPosition(size + 1, 2);
+            Console.Write('[');
+            for (int i = 0; i < maxHp; i++)
+            {
+                if (i < hp)
+                    Console.Write('#');
+                else
+                    Console.Write('_');
+            }
+            Console.Write(']');
+
+            Console.SetCursorPosition(100, 2);
         }
     }
 }
