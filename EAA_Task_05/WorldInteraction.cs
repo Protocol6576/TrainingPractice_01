@@ -184,7 +184,7 @@ namespace EAA_Task_05
                 int p1 = rnd.Next(1, size);
                 int p2 = rnd.Next(1, size2);
 
-                if(map[p1, p2] == ' ')
+                if (map[p1, p2] == ' ')
                 {
                     map[p1, p2] = '!';
                     enemy++;
