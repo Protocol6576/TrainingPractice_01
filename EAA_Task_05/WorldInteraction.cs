@@ -159,7 +159,7 @@ namespace EAA_Task_05
 
         public void StatCreation()
         {
-            string[] readMap = File.ReadAllLines(@"D:\map.txt");
+            string[] readMap = File.ReadAllLines(AppDomain.CurrentDomain.BaseDirectory + @"" + "map.txt");
             size = readMap.Length;
             size2 = readMap[1].Length;
 
