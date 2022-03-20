@@ -8,8 +8,8 @@ namespace EAA_Task_04.Assets
 {
     class BasicModel
     {
-        private int hp;
-        private int attack;
+        private double hp;
+        private double attack;
         private string[] view;
 
         public BasicModel(int Hp, int Attack, string[] View)
@@ -19,22 +19,46 @@ namespace EAA_Task_04.Assets
             view = View;
         }
 
-        public void TakeDamage(int damage)
+        public double HpInfo()
         {
-            hp -= damage;
+            return hp;
         }
 
-        public int DealDamage()
+        public void TakeDamage(double damage)
         {
-            return attack;
+            hp -= damage;
+            if (hp < 0)
+                hp = 0;
+        }
+
+        public void Heal(double heal)
+        {
+            hp += heal;
+        }
+
+        public double DealDamage(double modifier)
+        {
+            return (attack * modifier);
         }
 
         public void ShowModel(int posX, int posY)
         {
             for ( int i = 0; i < view.Length; i++)
             {
-                Console.SetCursorPosition(posX + i, posY);
-                Console.Write(view[i]);
+                Console.SetCursorPosition(posX, posY + i);
+                Console.WriteLine(view[i]);
+            }
+        }
+
+        public void UnShowModel(int posX, int posY)
+        {
+            for (int i = 0; i < view.Length; i++)
+            {
+                Console.SetCursorPosition(posX, posY + i);
+                for(int j = 0; j < view[i].Length; j++)
+                {
+                    Console.Write(" ");
+                }
             }
         }
     }

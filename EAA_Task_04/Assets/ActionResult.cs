@@ -10,9 +10,9 @@ namespace EAA_Task_04.Assets
     {
         private string action;
         private string result;
-        private int intResult;
+        private double intResult;
 
-        public ActionResult(string Action, string Result, int IntResult)
+        public ActionResult(string Action, string Result, double IntResult)
         {
             action = Action;
             result = Result;
@@ -22,7 +22,12 @@ namespace EAA_Task_04.Assets
         public void ShowResult(int posX, int posY)
         {
             Console.SetCursorPosition(posX, posY);
+            Console.Write("                          ");
+            Console.SetCursorPosition(posX, posY);
             Console.Write(action);
+
+            Console.SetCursorPosition(posX, posY + 1);
+            Console.Write("                          ");
             Console.SetCursorPosition(posX, posY + 1);
             Console.Write(result + ": " + intResult);
         }

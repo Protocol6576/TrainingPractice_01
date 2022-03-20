@@ -1,0 +1,16 @@
+D:\Education\Colledge\3d\Учебная практика\TrainingPractice_01\EAA_Task_04\bin\Debug\net5.0\EAA_Task_04.exe
+D:\Education\Colledge\3d\Учебная практика\TrainingPractice_01\EAA_Task_04\bin\Debug\net5.0\EAA_Task_04.deps.json
+D:\Education\Colledge\3d\Учебная практика\TrainingPractice_01\EAA_Task_04\bin\Debug\net5.0\EAA_Task_04.runtimeconfig.json
+D:\Education\Colledge\3d\Учебная практика\TrainingPractice_01\EAA_Task_04\bin\Debug\net5.0\EAA_Task_04.runtimeconfig.dev.json
+D:\Education\Colledge\3d\Учебная практика\TrainingPractice_01\EAA_Task_04\bin\Debug\net5.0\EAA_Task_04.dll
+D:\Education\Colledge\3d\Учебная практика\TrainingPractice_01\EAA_Task_04\bin\Debug\net5.0\ref\EAA_Task_04.dll
+D:\Education\Colledge\3d\Учебная практика\TrainingPractice_01\EAA_Task_04\bin\Debug\net5.0\EAA_Task_04.pdb
+D:\Education\Colledge\3d\Учебная практика\TrainingPractice_01\EAA_Task_04\obj\Debug\net5.0\EAA_Task_04.GeneratedMSBuildEditorConfig.editorconfig
+D:\Education\Colledge\3d\Учебная практика\TrainingPractice_01\EAA_Task_04\obj\Debug\net5.0\EAA_Task_04.AssemblyInfoInputs.cache
+D:\Education\Colledge\3d\Учебная практика\TrainingPractice_01\EAA_Task_04\obj\Debug\net5.0\EAA_Task_04.AssemblyInfo.cs
+D:\Education\Colledge\3d\Учебная практика\TrainingPractice_01\EAA_Task_04\obj\Debug\net5.0\EAA_Task_04.csproj.CoreCompileInputs.cache
+D:\Education\Colledge\3d\Учебная практика\TrainingPractice_01\EAA_Task_04\obj\Debug\net5.0\EAA_Task_04.dll
+D:\Education\Colledge\3d\Учебная практика\TrainingPractice_01\EAA_Task_04\obj\Debug\net5.0\ref\EAA_Task_04.dll
+D:\Education\Colledge\3d\Учебная практика\TrainingPractice_01\EAA_Task_04\obj\Debug\net5.0\EAA_Task_04.pdb
+D:\Education\Colledge\3d\Учебная практика\TrainingPractice_01\EAA_Task_04\obj\Debug\net5.0\EAA_Task_04.genruntimeconfig.cache
+D:\Education\Colledge\3d\Учебная практика\TrainingPractice_01\EAA_Task_04\obj\Debug\net5.0\EAA_Task_04.csproj.AssemblyReference.cache
