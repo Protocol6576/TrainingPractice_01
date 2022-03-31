@@ -45,19 +45,19 @@ namespace EAA_Task_04.Assets
              }
 
             Console.SetCursorPosition(posX + indent + 2, posY + 2);
-            Console.Write("1. - Обычная атака");
+            Console.Write("1. - Слово атаки");
 
             Console.SetCursorPosition(posX + indent + 2, posY + 3);
-            Console.Write("2. - призыв Кота");
+            Console.Write("2. - Слово призыва Кота");
 
             Console.SetCursorPosition(posX + indent + 2, posY + 4);
-            Console.Write("3. - Атака Котом");
+            Console.Write("3. - Слово атаки Котом");
 
             Console.SetCursorPosition(posX + indent + 2, posY + 5);
-            Console.Write("4. - Лечение");
+            Console.Write("4. - Слово Лечения");
 
             Console.SetCursorPosition(posX + indent + 2, posY + 6);
-            Console.Write("5. - Убить босса");
+            Console.Write("5. - Слово сильной атаки");
 
             indent += helpArea[1].Length - borders;
             Console.SetCursorPosition(posX + borders, mainArea.Length + 3);

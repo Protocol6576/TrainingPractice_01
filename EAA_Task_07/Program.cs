@@ -6,7 +6,13 @@ namespace EAA_Task_07
     {
         static void Main(string[] args)
         {
-            int[] arr = { 0, 1, 2, 3, 4, 5 };
+            int[] arr = new int[5];
+
+            Random rnd = new Random();
+            for (int i = 0; i < arr.Length; i++)
+            {
+                arr[i] = rnd.Next(1, 15);
+            }
 
             Console.Write("Старый массив: ");
             Concl(arr);
@@ -36,7 +42,7 @@ namespace EAA_Task_07
 
         static void Concl (int[] arr)
         {
-            for (int i = 0; i < arr.Length - 1; i++)
+            for (int i = 0; i < arr.Length; i++)
             {
                 Console.Write(arr[i] + ";");
             }

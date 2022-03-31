@@ -9,7 +9,7 @@ namespace EAA_Task_05
 {
     class WorldInteraction
     {
-        const int maxHp = 5;
+        const int maxHp = 10;
 
         char[,] map = new char[100, 100];
         int[] position = new int[2] { 1, 1 };
